@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An image gallery of different places, next button, previous button, light box, and an X at the top to close the lightbox">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <!-- Gallery Container -->
+    <div class="galleryContainer">
+
+         <!-- Filter Buttons --> 
+     <div class="filterButtons">
+      <button data-filter="all">All</button>
+      <button data-filter="paris">Paris</button>
+      <button data-filter="new york">New York</button>
+      <button data-filter="rome">Rome</button>
+      <button data-filter="jamaica">Jamaica</button>
+     </div>
+
+
+    <!-- Image Grid -->
+     <div class="galleryImages">
+     <img src="assets/paris.jpg" alt="galleryImg"  data-category="paris"  class="galleryImg">
+     <img src="assets/newyork.jpg" alt="galleryImg"  data-category="new york" class="galleryImg">
+     <img src="assets/rome.jpg"   alt="galleryImg"  data-category="rome" class="galleryImg">
+     <img src="assets/jamaica.jpg"  alt="galleryImg"  data-category="jamaica" class="galleryImg">
+     </div>
+
+    </div>
+
+<div class="lightbox" id="lightbox">
+<span class="closeLightBox">&times;</span>
+<img class="lightboxImg" id="lightboxImg" alt="ligthboxImg">
+<button class="previous">❮</button>
+<button class="next">❯</button>
+</div>
+<footer class="footer">© 2026 All rights reserved.</footer>
+</main> 
+<script src="app.js"></script>
+</body>
+</html>
