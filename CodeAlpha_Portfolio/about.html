@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" a href="style.css">
+</head>
+<body>
+   <nav class="nav-items">
+    
+    <img src="assets/navlogo.gif" class="portfolioImg" alt="logoImage">
+    
+
+    
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+      <div id="menuBtn" class="hamburger">☰</div>
+    </nav>
+    
+    <div>
+        <h2 class="aboutPage"> About Me</h2>
+    </div>
+<p class="aboutDescript">I am SeaAmber a front end web developer who builds responsive websites across different devices, optimizes the performance of the website. I also optimize websites for seo and accessibility through lighthouse reports.</p>
+<p class="aboutDescript"> I create websites from scratch as well as redesign into mobile responsive websites.</p>
+<p class="aboutDescript">I am an intern at Code Alpha, built multiple projects using JavaScript. I am learning other tech stack. I am also learning WordPress</p>
+<p class="aboutDescript"> I am working on new website projects and coding projects I am always constantly everyday learning something new about web development. I am enjoying this journey. I am constantly pushing code to GitHub.</p>
+<p class="aboutDescript"> My story of how I got into web development was I saw a program that teach it. I began to learn, and the more I did I became fascinated with how websites looked in live server. I was really fascinated with how it all came together in live server. I began to get discouraged after a while because I felt like my progress was slowing down. I thought about giving up. I came across another program, which is the program I am in today, and my mentor that I have today. When I joined this program that I am in today, my progress went up. My web development mentor really helped me out a lot. Looking back now, I am glad I didn't give up because I have made so much progress, and learned new skills, and this is also my passion. I also found in this something else I like to do and it is a career goal, a passion and a hobby. This is what I love to do and am passionate about. Web Development is my passion.</p>
+<p class="aboutDescript">I am also learning WordPress Elementor, and other types of WordPress slowly. I am enjoying this too.</p>
+<p class="aboutDescript">I code, problem solve, debug everyday or just about everyday in my free time. I also am learning WordPress.</p>
+<footer class="footer">© 2026 SeaAmber — Crafting responsive, accessible, and user-focused web interfaces.</footer>
+<script src="app.js"></script>
+ <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-list a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+</body>
+</html>
