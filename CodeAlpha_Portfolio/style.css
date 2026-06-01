@@ -1,0 +1,385 @@
+body, html {
+    overflow-x: hidden;
+}
+
+/* This is the index.html or home page styles */
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00ffff;
+}
+
+@media(max-width: 480px) {
+    .nav-items {
+        display: flex;
+        font-size: 3rem;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 2rem 3rem;
+    /* align-items: center; */
+    gap: 32px;
+    font-size: 42px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+ .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+
+
+
+
+
+
+}
+
+
+.nav-list a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+.nav-list a:hover {
+    color: #ff0000;
+}
+
+
+.nav-list a.active {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+
+
+
+.navigation {
+    list-style: none;
+} 
+
+
+
+
+.fewProjects {
+    margin: 12px 54px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #00ffff ;
+    text-align: center;
+}
+
+@media(max-width:480px) {
+    .fewProjects {
+        font-size: 2rem;
+    }
+}
+
+.screenshotSection {
+display: grid;
+grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr)); 
+} 
+
+@media(max-width: 480px) {
+    .screenshotSection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 768px) {
+    .screenshotSection {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+}
+
+
+
+
+.portfolioPic {
+ max-width:250px;
+border-radius: 32%;
+margin-bottom: 5px;
+object-fit: cover;
+}
+
+@media(max-width: 480px) {
+  .portfolioPic {
+    margin: 0 auto;
+  }
+}
+
+
+.screenshotImages {
+    display: flex;
+    gap: 2rem;
+}
+
+@media(max-width:480px) {
+    .screenshotImages {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        padding:0 24px;
+    }
+}
+
+.screenshotImg {
+height:400px;
+margin-top: 2rem;
+}
+
+@media(max-width:480px) {
+    .screenshotImg {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        padding:0 32px;
+    }
+}
+
+
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 2.85); /* dark overlay */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+
+
+.lightboxImg{
+  max-width: 500px;
+  height: 615px;
+  object-fit: contain; 
+}
+
+
+.close {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   margin-top: 5px;
+   font-size: 5rem;
+   background-color: #0000ff;
+ 
+}
+
+.close:hover {
+    background-color: #ff0000;
+}
+
+
+
+
+
+
+.experience {
+    font-size: 3rem;
+    font-weight: 600px;
+}
+
+.portfolioPic {
+    width: 300px;
+    margin-top: 2rem;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+
+
+.resumeInfo {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 480px) {
+.resumeInfo{
+    display: flex;
+    flex-direction: column;
+}
+}
+
+
+.resume {
+font-size: 2rem;
+}
+
+
+
+@media(max-width:480px) {
+    .resumeShot {
+        max-width: 500px;
+    }
+}
+
+
+
+.learnMore {
+    display: block;
+    margin: 26px auto;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border-radius: 20px;
+
+}
+
+.learnMore:hover {
+  background-color: #00ffff;
+}
+
+
+
+
+.contactInformation {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem;
+}
+
+.contact {
+    margin-bottom: 2px;
+}
+
+.emailContact {
+    font-size: 2rem;
+    margin-top:0;
+}
+
+
+
+/* This footer is global across all the pages*/
+
+.footer {
+    background-color: #000000;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+/* This is the project.html styles*/
+
+
+@media(max-width: 480px) {
+    .nav-list {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+}
+
+
+
+
+.myProjects {
+    font-size: 3rem;
+    text-align: center;
+    color: #00ffff;
+}
+
+
+.projectLinks {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+}
+
+@media(max-width: 480px) {
+.projectLinks {
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+.projectLink {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+.projectsComing {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    color: #00ffff ;
+}
+
+.projectsPage {
+    display: flex;
+    gap: 2px;
+}
+
+@media(max-width: 480px) {
+    .projectsPage {
+        flex-direction: column;
+        max-width:400px;
+        gap: 5px;
+    }
+}
+
+
+
+
+
+/* This is the about page styles */
+.aboutPage{
+ text-align: center;
+ font-weight: bold;
+ font-size: 4rem;
+ margin-top: 0;
+}
+
+.aboutDescript {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 55px;
+}
+

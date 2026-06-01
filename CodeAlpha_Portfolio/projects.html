@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" a href="style.css">
+</head>
+<body>
+
+ <nav class="nav-items">
+    
+    <img src="assets/navlogo.gif" class="portfolioImg" alt="logoImage">
+    
+
+    
+    <ul id="nav-list" class="nav-list">
+        <li class="navigation"><a href="index.html">Home</a></li>
+        <li class="navigation"><a href="projects.html">Projects</a></li>
+        <li class="navigation"><a href="about.html">About</a></li>
+    </ul>
+      <div id="menuBtn" class="hamburger">☰</div>
+    </nav>
+   
+
+       
+        <h2 class="myProjects">My Projects</h2>
+        <div class="projectLinks">
+        <a href="https://jewelry-website-teal.vercel.app/" target="_blank" class="projectLink">Live Demo (Vercel)</a>
+        <a href="https://github.com/SeaAmber/Skincare-Website-Dew-Drop-Beauty.git" target="_blank" class="projectLink">Source Code(GitHub)</a>
+        <a href="https://github.com/SeaAmber/Password-Generator.git" target="_blank" class="projectLink">Source Code(GitHub)</a>
+       </div>
+
+       <p class="projectsComing">More projects coming soon</p>
+
+
+    <div class="projectsPage">
+        <img src="assets/jewelrywebsitehomepage.jpeg" class="screenshotImg" alt=" Home Page">
+        <img src="assets/reactwebsitehomepage.jpeg" class="screenshotImg" alt="Home Page">
+        <img src="assets/skincarewebsitehomepage.jpeg"  class="screenshotImg" alt="Home Page">
+        <img src="assets/booktracker.jpeg" class="screenshotImg"  alt="Book Tracker">
+    </div>
+    <footer class="footer">© 2026 SeaAmber — Crafting responsive, accessible, and user-focused web interfaces.</footer>
+<script src="app.js"></script>
+ <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-list a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

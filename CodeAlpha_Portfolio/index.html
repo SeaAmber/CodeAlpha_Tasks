@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" a href="style.css">
+</head>
+<body>
+    <nav class="nav-items">
+      
+    <img src="assets/navlogo.gif" class="portfolioImg" alt="logoImage">
+
+    <ul id="nav-list" class="nav-list">
+        <li class="navigation"><a href="index.html">Home</a></li>
+        <li class="navigation"><a href="projects.html">Projects</a></li>
+        <li class="navigation"><a href="about.html">About</a></li>
+    </ul>
+    <div id="menuBtn" class="hamburger">☰</div>
+    </nav>
+     <h2 class="fewProjects">Some Of My Projects</h2>
+
+    <section class="screenshotSection">
+     <img src="assets/portfoliopicture.jpg" class="portfolioPic"  alt="My Picture">
+     <div class="screenshotImages">
+     <img src="assets/reactwebsitehomepage.jpeg" class="screenshotImg" id="screenshotImg" alt="Some of my projects">
+    <img src="assets/jewelrywebsitehomepage.jpeg"  class="screenshotImg"  id="screenshotImg"  alt="Some of my projects">
+  </div>
+</section>
+
+    <div class="lightbox" id="lightbox" >
+     <span class="close" id="close">&times;</span>
+     <img id="lightboxImg" class="lightboxImg">
+    </div>
+
+
+  
+
+       <div class="metricSection">
+        <h2>Performance Optimization | Front End Web Developer</h2>
+     <p class="experience">Experience: 17 months</p>
+     <h1> Metrics</h1>
+     <p>Performance Optimization of  95%-100% using lighthouse reports for faster speed</p>
+     <p>Optimized Core Web Vitals(INP,LCP,CLS)</p>
+     <p>Optimized accessibility for screenreaders and other accomodations</p>
+    <p>Optimized Seo using the lighthouse reports</p> 
+    </div>
+
+<div class="resumeInfo">
+    <h2 class="resume">My Resume</h2>
+         <img src="assets/Resume Screenshot.jpeg" class="resumeShot" alt="resume">
+
+</div>
+
+     <div>
+        <h2 class="aboutPage"> About Me</h2>
+        <p class="aboutDescript">I am SeaAmber a front end web developer who builds responsive websites across different devices, optimizes the performance of the website. I also optimize websites for seo and accessibility through lighthouse reports.</p>
+       <p class="aboutDescript"> I create websites from scratch as well as redesign into mobile responsive websites.</p>
+   <button class="learnMore" id="learnMore">Learn More</button>
+    </div>
+
+
+
+    <div class="contactInformation">
+     <h2 class="contact"> Contact Information</h2>
+     <p class="emailContact">Email: Seaamber.9@gmail.com</p>
+     </div>
+
+    <footer class="footer">© 2026 SeaAmber — Crafting responsive, accessible, and user-focused web interfaces.</footer>
+    <script src="app.js"></script>
+    <script>
+  const currentPage = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-list a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>
