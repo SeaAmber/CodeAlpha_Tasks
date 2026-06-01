@@ -1,5 +1,5 @@
 const songs = [
-  { title: "He is risen", artist: "Misselle", src: "music/Heisrisen.mp3" },
+  { title: "He is risen", artist: "Misselle", src: "CodeAlpha_MusicPlayer/music/Heisrisen.mp3" },
   { title: "Holy,Holy,Holy", artist: "Misselle", src: "music/Holy.mp3" },
   { title: "Jesus,the greatest", artist: "jumadiharyanto07", src: "music/Jesusthegreatest.mp3" },
   {title:"Only Jesus", artist:"jumadiharyanto07", src:"music/onlyJesus.mp3" },
