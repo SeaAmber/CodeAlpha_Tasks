@@ -25,3 +25,27 @@ images.forEach((img, index) => {
 close.addEventListener("click", () => {
     lightbox.style.display = "none";
 });
+
+
+//Next Image
+next.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImage.src = images[currentIndex].src;
+});
+
+
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+
+        images.forEach(img => {
+            if(filter === "all" || img.dataset.category === filter) {
+                img.style.display = "block";  
+            }
+            else {
+                img.style.display = "none";
+            }
+        });
+    });
+});
